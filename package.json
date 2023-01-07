@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/MichaelTarasov21/CSV-Combiner/issues"
   },
-  "homepage": "https://github.com/MichaelTarasov21/CSV-Combiner#readme"
+  "homepage": "https://github.com/MichaelTarasov21/CSV-Combiner#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
