@@ -14,9 +14,8 @@ async function main() {
 		if (process.exitCode == 2) process.exit();
 	}
 
-	console.log(`"email_hash","category","filename"`);
 	for (let i = 0; i < filepaths.length; i++) {
-		processFile(filepaths[i]);
+		processFile(filepaths[i], i);
 	}
 }
 
