@@ -9,8 +9,9 @@ function processFile(path = String) {
 
 		stream.on("data", function (data) {
 			data = data.toString().split(/\r?\n/);
-			for (let i = 1; i < data.length; i++) {
-				console.log(data[i]);
+			for (let i = 1; i < data.length - 1; i++) {
+				// Skips the first line (heading) and the last line of the array (empty)
+				console.log(data[i] + `,"${path}"`);
 			}
 		});
 
