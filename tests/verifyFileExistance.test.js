@@ -1,6 +1,6 @@
 const process = require("process");
 
-const verifyExistance = require("../verifyFileExistance.js");
+const verifyExistance = require("../src/verifyFileExistance.js");
 
 describe("File Existance Checker", () => {
 	test("The file tests/verifyFileExistance.test.js should exist", () => {

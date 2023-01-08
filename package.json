@@ -2,8 +2,9 @@
   "name": "csv-combiner",
   "version": "1.0.0",
   "description": "A command line program that takes several CSV files as arguments. Outputs a combined CSV file to stdout.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "jest"
   },
   "repository": {
