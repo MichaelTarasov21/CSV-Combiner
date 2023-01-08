@@ -2,6 +2,7 @@
 
 const getFilePaths = require("./getfilepaths.js");
 const verifyExistance = require("./verifyFileExistance.js");
+const processFile = require("./processFile.js");
 
 async function main() {
 	// Gets all file paths supplied as arguments and removes the call to node as well as the name of the script being executed
@@ -13,7 +14,10 @@ async function main() {
 		if (process.exitCode == 2) process.exit();
 	}
 
-	console.log(filepaths);
+	console.log(`"email_hash","category","filename"`);
+	for (let i = 0; i < filepaths.length; i++) {
+		processFile(filepaths[i]);
+	}
 }
 
 main();
